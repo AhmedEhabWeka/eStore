@@ -1,0 +1,44 @@
+.container-fluid {
+    min-height: 100vh;
+}
+
+li {
+    list-style-type: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    background-color: white !important;
+}
+
+.colors {
+    width: 95%;
+}
+
+.fab {
+    font-size: 1.8rem;
+    color: grey;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.fab:hover {
+    color: #FBB03B;
+}
+
+.image-container {
+    position: relative;
+}
+
+.btn-secondary {
+    background-color: white !important;
+    color: black !important;
+    border-radius: 2rem !important;
+}
+
+@media screen and (min-width:570px) and (max-width:768px) {
+    .image-container {
+        width: 75% !important;
+    }
+}

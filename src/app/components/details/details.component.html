@@ -1,0 +1,96 @@
+<header>
+    <p><span class="text-muted"><i [routerLink]="['/men']" class="fas fa-home"></i> / {{productDetails?.gender}} Tops / {{productDetails?.type}} / </span><b>{{productDetails?.title}}</b></p>
+
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="imagesContainer d-flex">
+                <div class="Thumbnails d-flex flex-column m-3">
+                    <img [src]="productDetails?.image" class="w-100 pb-3 " height="100px">
+                    <img [src]="productDetails?.image" class="w-100 pb-3 " height="100px">
+                    <img [src]="productDetails?.image" class="w-100 pb-3 " height="100px">
+                </div>
+                <div class="mainImage m-3">
+                    <img [src]="productDetails?.image" class="" width="150%" height="400px">
+                </div>
+            </div>
+        </div>
+        <div class="col-6 ">
+
+            <header>
+                <h2>{{productDetails?.title}}</h2>
+                <h4><span><i class="fas fa-dollar-sign "></i></span> {{productDetails?.price}}</h4>
+            </header>
+            <section>
+                <p>Color:{{productDetails?.color}}</p>
+                <p>Size: <b>See size table</b></p>
+                <select class="form-select w-25" aria-label="Default select example">
+                    <option selected>Choose Size</option>
+                    <option value="1">XS</option>
+                    <option value="2">S</option>
+                    <option value="3">M</option>
+                    <option value="3">L</option>
+                    <option value="3">XL</option>
+                    <option value="3">XXL</option>
+                  </select>
+            </section>
+            <section>
+                <p>Quantity:</p>
+                <div class=" w-50 d-flex justify-content-between ">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected> - 1 +</option>
+                        <option value="1">XS</option>
+                        <option value="2">S</option>
+                        <option value="3">M</option>
+                        <option value="3">L</option>
+                        <option value="3">XL</option>
+                        <option value="3">XXL</option>
+                      </select>
+                    <button type="button" class="btn btn-warning">Add to cart</button>
+                    <div><i class="fab fa-gratipay "></i></div>
+                </div>
+
+            </section>
+
+
+
+
+        </div>
+        <section class="  text-center p-5  m-5">
+            <div class="w-100 ">
+                <button type="button" class=" m-3 btn btn-outline-warning">Description</button>
+                <button type="button" class=" m-3 btn btn-outline-light">Reviews</button>
+            </div>
+
+            <div class=" w-100 container d-flex justify-content-between">
+                <div class=" py-5 w-50 left">
+                    <div class=" py-4 icon">
+                        <i class="far fa-sticky-note"></i>
+                    </div>
+                    <div class=" py-3 title">
+                        <b>Details and product description</b>
+                    </div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquid officia impedit quaerat odit, nulla exercitationem iusto inventore distinctio harum.</p>
+                    </div>
+                </div>
+
+                <div class=" py-5 w-50 right">
+                    <div class=" py-4 icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <div class=" py-3 title">
+                        <b>Material(s) and care</b>
+                    </div>
+                    <div class="description">
+
+                        <p>Body:98 % - 2 % ELASTENE</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+</div>

@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+i , a {
+    cursor: pointer;
+}
+
+/* media queries  */
+@media screen and (min-width: 1334px) and (max-width:1399px)
+ {
+
+    
+ }
+
+ @media screen and (min-width: 1250px) and (max-width:1334px)
+ {
+
+    
+ }
+
+ @media screen and (min-width: 768px) and (max-width:991px)
+ {  
+
+   
+ }
+
+ @media screen and  (max-width:767px)
+ {  
+    
+ }

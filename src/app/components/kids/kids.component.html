@@ -1,0 +1,163 @@
+<div class="container-fluid  ">
+    <div class="row m-5">
+        <div class=" col-md-6 col-lg-4 col-xl-3">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                     <b>Product Type</b> 
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><input type="checkbox" class="form-check-input" [(ngModel)]="filter.tShirts" (ngModelChange)="filterChange()"> T-Shirts</li>
+                                <li><input type="checkbox" class="form-check-input" [(ngModel)]="filter.sweatShirts" (ngModelChange)="filterChange()">Sweatshirts</li>
+                                <li><input type="checkbox" class="form-check-input" [(ngModel)]="filter.tankTops" (ngModelChange)="filterChange()">Tank Tops</li>
+                                <li><input type="checkbox" class="form-check-input" [(ngModel)]="filter.dressShirts" (ngModelChange)="filterChange()">Dress Shirts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <b>Price</b> 
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <label for="customRange2" class="form-label">Example range</label>
+                            <input type="range" class="form-range" min="0" max="300" id="customRange2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <b>Collection</b> 
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <b>Size</b> 
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body d-flex justify-content-center">
+                            <div class="btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="btn-group" role="group" aria-label="First group">
+                                    <input type="button" class="btn btn-outline-secondary" value="XS" (click)="filterSize('xs')">
+                                    <input type="button" class="btn btn-outline-secondary" value="S" (click)="filterSize('s')">
+                                    <input type="button" class="btn btn-outline-secondary" value="M" (click)="filterSize('m')">
+                                    <input type="button" class="btn btn-outline-secondary" value="L" (click)="filterSize('l')">
+                                    <input type="button" class="btn btn-outline-secondary" value="XL" (click)="filterSize('xl')">
+                                    <input type="button" class="btn btn-outline-secondary" value="XXL" (click)="filterSize('xxl')">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      <b>Color</b> 
+                    </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body d-flex justify-content-center">
+                                <div class="btn-group  colors" role="group" aria-label="First group">
+                                    <input type="color" class="form-control form-control-color" value="#000000" (click)="filterColor('black')">
+                                    <input type="color" class="form-control form-control-color" value="#7B241C" (click)="filterColor('brown')">
+                                    <input type="color" class="form-control form-control-color" value="#FFFFFF" (click)="filterColor('white')">
+                                    <input type="color" class="form-control form-control-color" value="#F7DC6F" (click)="filterColor('yellow')">
+                                    <input type="color" class="form-control form-control-color" value="#E74C3C" (click)="filterColor('red')">
+                                    <input type="color" class="form-control form-control-color" value="#2874A6" (click)="filterColor('blue')">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-6 col-lg-8 col-xl-9">
+            <header class="mb-5">
+                <div class="d-flex justify-content-between ">
+                    <div class="d-flex align-items-center">
+                        <h3> Kids Tops</h3><span class="text-muted px-2 "><span>(</span>{{numberOfProducts}}<span>)</span></span>
+                    </div>
+                    <div class="d-flex  ">
+                        <div class="d-flex align-items-center px-3">
+                            <div>show products: </div>
+                            <div class="px-2 dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                      30
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center px-3">
+                            <div>sort:</div>
+                            <div class=" px-2 dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Popular
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+            <div class="row">
+                <div *ngFor="let product of filteredProducts " class="  col-12 col-lg-6 col-xl-4">
+                    <div [routerLink]="[ '/details' , product.gender , product.id  ]" class="productWrapper">
+                        <div class="image-container ">
+                            <div>
+                                <img class="mb-3 w-100" height="236px" [src]="product.image" alt="">
+                                <i class="fab fa-gratipay"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="title">
+                            <h6>{{product.title}}</h6>
+
+                        </div>
+                        <div class="price">
+                            <h6><span><i class="fas fa-dollar-sign"></i></span> {{product.price}}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

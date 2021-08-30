@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "test-7bba2": {
+      "hosting": {
+        "app": [
+          "test-7bba2"
+        ]
+      }
+    }
+  }
+}

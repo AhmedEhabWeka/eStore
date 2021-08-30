@@ -1,0 +1,45 @@
+.container{
+    position: relative;
+}
+.wrapper{
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left:0
+    
+}
+
+.form-control , .btn-warning{
+    border-radius: 2rem !important;
+}
+a{
+    display: block;
+    color: black !important;
+    text-decoration: none;
+}
+
+i{
+    padding: 0 1rem;
+}
+
+@media screen and (min-width: 500px) and (max-width:768px)
+ {
+    h4{
+        font-size: 1.1rem;
+    }
+    .form-control{
+        width: 5.5rem;
+    }
+    .btn-warning{
+        width: 4.5rem;
+    }
+    
+ }
+
+ @media screen and (min-width: 768px) and (max-width:992px)
+ {
+  
+    i{
+        padding: 0 .5rem;
+    }
+ }
